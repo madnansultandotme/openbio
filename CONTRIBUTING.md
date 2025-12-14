@@ -43,7 +43,7 @@ Thank you for your interest in contributing to OpenBio! This document provides g
 
 ### Reporting Bugs
 
-1. Check if the bug has already been reported in [Issues](https://github.com/openbio/openbio/issues)
+1. Check if the bug has already been reported in [Issues](https://github.com/madnansultandotme/openbio/issues)
 2. If not, create a new issue with:
    - Clear title and description
    - Steps to reproduce
@@ -53,7 +53,7 @@ Thank you for your interest in contributing to OpenBio! This document provides g
 
 ### Suggesting Features
 
-1. Check existing [Issues](https://github.com/openbio/openbio/issues) and [Discussions](https://github.com/openbio/openbio/discussions)
+1. Check existing [Issues](https://github.com/madnansultandotme/openbio/issues) and [Discussions](https://github.com/madnansultandotme/openbio/discussions)
 2. Create a new issue with:
    - Clear title and description
    - Use case and motivation
@@ -250,6 +250,6 @@ Contributors will be:
 ## ❓ Questions?
 
 - 📧 Email us at info.adnansultan@gmail.com
-- 🐛 Open an issue for technical questions
+- 🐛 Open an issue for technical questions at [GitHub Issues](https://github.com/madnansultandotme/openbio/issues)
 
 Thank you for contributing to OpenBio! 🚀

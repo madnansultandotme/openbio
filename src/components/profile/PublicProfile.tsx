@@ -4,8 +4,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { ExternalLink } from 'lucide-react';
-import { Profile, Link } from '@/types/database';
+import { Profile, Link as LinkType } from '@/types/database';
 
 interface PublicProfileProps {
   username: string;
@@ -13,7 +14,7 @@ interface PublicProfileProps {
 
 export function PublicProfile({ username }: PublicProfileProps) {
   const [profile, setProfile] = useState<Profile | null>(null);
-  const [links, setLinks] = useState<Link[]>([]);
+  const [links, setLinks] = useState<LinkType[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -44,7 +45,7 @@ export function PublicProfile({ username }: PublicProfileProps) {
         updated_at: new Date().toISOString()
       };
 
-      const mockLinks: Link[] = [
+      const mockLinks: LinkType[] = [
         {
           id: '1',
           user_id: 'user1',
@@ -88,7 +89,7 @@ export function PublicProfile({ username }: PublicProfileProps) {
     }
   };
 
-  const handleLinkClick = async (link: Link) => {
+  const handleLinkClick = async (link: LinkType) => {
     try {
       // TODO: Implement link click tracking
       // 1. Call analytics API to track link click
@@ -120,12 +121,12 @@ export function PublicProfile({ username }: PublicProfileProps) {
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">404</h1>
           <p className="text-gray-600 mb-8">Profile not found</p>
-          <a
+          <Link
             href="/"
             className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
           >
             Go Home
-          </a>
+          </Link>
         </div>
       </div>
     );

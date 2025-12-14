@@ -31,7 +31,7 @@ Your open-source link-in-bio builder.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/openbio/openbio.git
+   git clone https://github.com/madnansultandotme/openbio.git
    cd openbio
    ```
 
@@ -155,7 +155,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 📧 Email: support@openbio.app
 - 💬 Discord: [Join our community](https://discord.gg/openbio)
-- 🐛 Issues: [GitHub Issues](https://github.com/openbio/openbio/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/madnansultandotme/openbio/issues)
 - 📖 Documentation: [docs.openbio.app](https://docs.openbio.app)
 
 ---

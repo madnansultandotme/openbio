@@ -51,7 +51,7 @@ export const formatNumber = (num: number): string => {
 };
 
 // Debounce function for search/input
-export const debounce = <T extends (...args: any[]) => any>(
+export const debounce = <T extends (...args: unknown[]) => unknown>(
   func: T,
   wait: number
 ): ((...args: Parameters<T>) => void) => {

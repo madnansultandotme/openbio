@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
 import { 
   Zap, 
   Palette, 
@@ -61,7 +61,7 @@ export default function HomePage() {
               </Button>
             </Link>
             <a
-              href="https://github.com/openbio/openbio"
+              href="https://github.com/madnansultandotme/openbio"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -95,7 +95,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Everything you need, nothing you don't
+              Everything you need, nothing you don&apos;t
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               OpenBio focuses on simplicity and performance while giving you full control over your data.
@@ -209,23 +209,23 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex space-x-6 text-sm text-gray-600">
-              <a href="/docs" className="hover:text-gray-900 transition-colors">
+              <Link href="/docs" className="hover:text-gray-900 transition-colors">
                 Documentation
-              </a>
+              </Link>
               <a 
-                href="https://github.com/openbio/openbio" 
+                href="https://github.com/madnansultandotme/openbio" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-gray-900 transition-colors"
               >
                 GitHub
               </a>
-              <a href="/privacy" className="hover:text-gray-900 transition-colors">
+              <Link href="/privacy" className="hover:text-gray-900 transition-colors">
                 Privacy
-              </a>
-              <a href="/terms" className="hover:text-gray-900 transition-colors">
+              </Link>
+              <Link href="/terms" className="hover:text-gray-900 transition-colors">
                 Terms
-              </a>
+              </Link>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">

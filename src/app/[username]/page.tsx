@@ -5,13 +5,13 @@ import { PublicProfile } from '@/components/profile/PublicProfile';
 import { notFound } from 'next/navigation';
 
 interface ProfilePageProps {
-  params: {
+  params: Promise<{
     username: string;
-  };
+  }>;
 }
 
-export default function ProfilePage({ params }: ProfilePageProps) {
-  const { username } = params;
+export default async function ProfilePage({ params }: ProfilePageProps) {
+  const { username } = await params;
 
   // Basic username validation
   if (!username || username.length < 3 || username.length > 30) {
@@ -29,7 +29,7 @@ export default function ProfilePage({ params }: ProfilePageProps) {
 
 // TODO: Generate metadata for SEO
 export async function generateMetadata({ params }: ProfilePageProps) {
-  const { username } = params;
+  const { username } = await params;
   
   // TODO: Fetch profile data for metadata
   // 1. Get profile by username

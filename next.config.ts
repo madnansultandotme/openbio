@@ -1,18 +1,24 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  // Enable experimental features
-  experimental: {
-    // Enable server components
-    serverComponentsExternalPackages: ['@supabase/supabase-js'],
-  },
+  // Server external packages (moved from experimental)
+  serverExternalPackages: ['@supabase/supabase-js'],
 
-  // Image optimization
+  // Image optimization (updated to use remotePatterns)
   images: {
-    domains: [
-      'localhost',
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '3000',
+        pathname: '/**',
+      },
       // TODO: Add your Supabase storage domain
-      // 'your-project.supabase.co',
+      // {
+      //   protocol: 'https',
+      //   hostname: 'your-project.supabase.co',
+      //   pathname: '/storage/v1/object/public/**',
+      // },
     ],
     formats: ['image/webp', 'image/avif'],
   },

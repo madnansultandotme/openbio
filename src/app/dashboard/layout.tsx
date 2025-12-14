@@ -15,10 +15,6 @@ export default function DashboardLayout({
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
   const router = useRouter();
 
-  useEffect(() => {
-    checkAuthentication();
-  }, []);
-
   const checkAuthentication = async () => {
     try {
       // TODO: Implement authentication check
@@ -41,6 +37,10 @@ export default function DashboardLayout({
       router.push('/login');
     }
   };
+
+  useEffect(() => {
+    checkAuthentication();
+  }, []);
 
   // Show loading state while checking authentication
   if (isAuthenticated === null) {
