@@ -153,10 +153,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 Email: support@openbio.app
-- 💬 Discord: [Join our community](https://discord.gg/openbio)
-- 🐛 Issues: [GitHub Issues](https://github.com/madnansultandotme/openbio/issues)
-- 📖 Documentation: [docs.openbio.app](https://docs.openbio.app)
+- 📧 Email: info.adnansultan@gmail.com
+- 🐛 Issues: [GitHub Issues](https://github.com/madnansultandotme/openbio/ISSUES.md)
+- 📖 Documentation: [Markdown Documentation](https://github.com/madnansultandotme/openbio/ISSUES.md)
 
 ---
 
