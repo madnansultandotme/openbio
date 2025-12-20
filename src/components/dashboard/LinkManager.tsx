@@ -4,15 +4,15 @@
 'use client';
 
 import { useState } from 'react';
-import { 
-  DragDropContext, 
-  Droppable, 
-  Draggable, 
+import {
+  DragDropContext,
+  Droppable,
+  Draggable,
   DropResult,
   DroppableProvided,
   DraggableProvided,
-  DraggableStateSnapshot
-} from 'react-beautiful-dnd';
+  DraggableStateSnapshot,
+} from '@hello-pangea/dnd';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
